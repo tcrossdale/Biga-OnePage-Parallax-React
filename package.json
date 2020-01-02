@@ -6,7 +6,7 @@
   "author": "Terrence Crossdale",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tcrossdale/Biga-Parallax-Theme"
+    "url": "https://github.com/tcrossdale/Biga-OnePage-Parallax-React"
   },
   "scripts": {
     "start": "react-scripts start",
