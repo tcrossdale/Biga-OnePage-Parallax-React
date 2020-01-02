@@ -1,0 +1,270 @@
+.modal {
+  z-index: 10090;
+}
+
+.modal-backdrop {
+  z-index: 10080;
+
+  &.show {
+    opacity: 0.75;
+  }
+}
+
+.modal.promo-modal {
+  .modal-dialog {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+  }
+
+  .modal-header {
+    padding: 0;
+    position: relative;
+
+    button {
+      position: absolute;
+      top: 0px;
+      right: 5px;
+      z-index: 10;
+      background: #bf923d;
+      border-radius: 50%;
+      padding: 7px;
+      font-size: 16px;
+      text-shadow: none;
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: -30px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.35);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: $white;
+  font-size: 26px;
+  z-index: 20;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  cursor: initial;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    bottom: 15px;
+  }
+
+  &:hover {
+    background: rgba(0, 0, 0, 1);
+    color: $white;
+    cursor: pointer;
+    background: rgba(197, 56, 57, 1);
+  }
+}
+
+.sticky-wrapper {
+  height: auto !important;
+}
+
+.cta-btn {
+  font-family: $montserratBold;
+  font-size: 16px;
+  background: #816147;
+  color: $white;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  outline: none;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input {
+  &[type="text"],
+  &[type="tel"],
+  &[type="email"],
+  &[type="number"] {
+    border-radius: 0;
+    font-family: $montserratRegular;
+    color: #816147;
+  }
+}
+
+textarea,
+select {
+  border-radius: 0;
+  font-family: $montserratRegular;
+  color: #816147;
+}
+
+input {
+  &[type="text"]::-webkit-input-placeholder,
+  &[type="email"]::-webkit-input-placeholder,
+  &[type="tel"]::-webkit-input-placeholder,
+  &[type="number"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #816147;
+  }
+}
+
+select[type="number"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #816147;
+}
+
+select option {
+  color: #816147;
+}
+
+textarea {
+  min-height: 200px;
+  &.form-control {
+    resize: none;
+    border-radius: 0;
+  }
+
+  resize: none;
+  border-radius: 0;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  outline: none;
+  border: 0;
+}
+
+.owl-carousel {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+
+  &.owl-theme {
+    .owl-stage-outer,
+    .owl-stage,
+    .owl-item {
+      height: 100%;
+    }
+    .item {
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .owl-nav {
+      margin-top: 0;
+      button,
+      .owl-prev,
+      .owl-next {
+        font-size: 40px;
+        line-height: initial;
+        height: auto;
+        &:hover,
+        &:focus {
+          outline: none;
+          background: none;
+          background: none;
+          box-shadow: none;
+        }
+      }
+    }
+    .owl-dots {
+      button {
+        outline: none;
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+  &.owl-loaded {
+    display: flex;
+    flex-flow: column;
+  }
+  &.main-carousel {
+    .item{
+      > * {
+        position: relative;
+        z-index: 2;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.45);
+      }
+      &:before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.30);
+        z-index: 1;
+      }
+      .title {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      .blurb {
+        font-size: 1.45rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .back-to-top {
+    font-size: 30px;
+    bottom: -40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  hr {
+    &.thick-horiz-divider {
+      height: 10px;
+    }
+
+    &.thick-vert-divider {
+      width: 10px;
+
+      &.thicker {
+        width: 18px;
+      }
+    }
+
+    &.thick-horiz-divider.thicker {
+      height: 18px;
+    }
+  }
+  .modal.promo-modal .modal-dialog {
+    max-width: 680px;
+  }
+  .owl-carousel {
+    &.owl-theme {
+      .item {
+        .title {
+          font-size: 2.8rem;
+        }
+        .blurb {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}

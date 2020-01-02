@@ -1,0 +1,129 @@
+.montserrat {
+  font-family: $montserratRegular;
+}
+
+.montserrat_bold {
+  font-family: $montserratBold;
+}
+
+.librebaskerville {
+  font-family: $libreRegular;
+}
+
+.librebaskerville_italic {
+  font-family: $libreItalic;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: $white;
+  font-family: $libreRegular;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: $libreRegular;
+
+  &.medium {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &.xlarge {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+strong {
+  font-family: $montserratBold;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &.normal {
+    list-style: initial;
+  }
+}
+
+h1 {
+}
+
+h3 {
+  font-size: 32px;
+  font-family: $libreItalic;
+}
+
+h2,
+h3,
+h4 {
+  font-family: $montserratBold;
+}
+
+h5 {
+  font-family: $montserratBold;
+  text-transform: uppercase;
+}
+
+h6 {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  background: $red;
+  height: 5px;
+  width: 100%;
+  margin: 20px auto;
+
+  &.thick-vert-divider {
+    width: 5px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &.horiz-divider {
+    width: 60%;
+    margin: 20px 0 20px 0;
+  }
+
+  &.thick-horiz-divider {
+    height: 5px;
+    width: 60%;
+    margin: 20px 0 20px 0;
+  }
+}
+
+/*  THEME COLORS
+-------------------------*/
+.highlight {
+  color: $red !important;
+}
