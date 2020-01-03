@@ -38,7 +38,7 @@ class DefaultLayout extends Component {
             <Redirect appData={this.state.appData} from="/" to="/" />
           </Switch>
         </Suspense>
-        <DefaultFooter />
+        <DefaultFooter appData={this.state.appData} />
       </React.Fragment>
     );
   }

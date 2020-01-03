@@ -242,7 +242,7 @@ const contentData = {
         '<div class="form-group"><textarea type="email" class="form-control" placeholder="Message*" required></textarea></div>' +
         '<div class="form-group"><button type="submit" class="submit-btn cta-btn">Submit</button></div>' +
         "</form>" +
-        '<div class="contact-info-pane"><div class="slot"><h6>Location</h6> <span>3 Clinton St, New York, NY 10002</span></div><div class="slot"><h6>Hours</h6><div class="time-slot-wrap"><div class="time-slot"><span>Mon - Fri:</span> <b>5pm - 11pm</b></div><div class="time-slot"><span>Sat - Sun:</span> <b>12pm - 11pm</b></div></div></div><div class="slot"><h6>Email</h6> <a href="mailto:info@crossdaletechsolutions.com.com"><i class="fa fa-envelope"></i> info@crossdaletechsolutions.com.com</a></div><div class="slot"><h6>Number</h6> <a href="tel:9172658453"><i class="fa fa-phone"></i> (917) 265-8453</a></div></div>' +
+        '<div class="contact-info-pane"><div class="slot"><h6>Location</h6> <span>3 Biga St, New York, NY 15555</span></div><div class="slot"><h6>Hours</h6><div class="time-slot-wrap"><div class="time-slot"><span>Mon - Fri:</span> <b>5pm - 11pm</b></div><div class="time-slot"><span>Sat - Sun:</span> <b>12pm - 11pm</b></div></div></div><div class="slot"><h6>Email</h6> <a href="mailto:info@bigareactthemme.com"><i class="fa fa-envelope"></i> info@bigareactthemme.com</a></div><div class="slot"><h6>Number</h6> <a href="tel:9175557655"><i class="fa fa-phone"></i> (917) 555-7655</a></div></div>' +
         "</div>" +
         "</div>"
     }
@@ -306,7 +306,8 @@ const contentData = {
       url: "#",
       label: "Contact"
     }
-  ]
+  ],
+  copyright: "© 2019. All Rights Reserved."
 };
 
 export default contentData;

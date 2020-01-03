@@ -28,6 +28,11 @@ class DefaultFooter extends Component {
                 ))}
             </ul>
           </div>
+          {this.props.appData && this.props.appData.copyright ? (
+            <div className="copyright">
+              <p>{this.props.appData.copyright}</p>
+            </div>
+          ) : null}
         </Container>
       </footer>
     );
