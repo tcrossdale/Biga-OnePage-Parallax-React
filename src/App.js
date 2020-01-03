@@ -16,7 +16,6 @@ const DefaultLayout = React.lazy(() => import("./containers/DefaultLayout"));
 
 class App extends Component {
   state = {
-    appData: null,
     isLoggedIn: false,
     currentUser: null,
     appData: { ...ContentData }

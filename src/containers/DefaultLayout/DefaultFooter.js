@@ -10,6 +10,7 @@ const defaultProps = {};
 
 class DefaultFooter extends Component {
   render() {
+    // eslint-disable-next-line
     const { children, ...attributes } = this.props;
 
     return (
@@ -20,7 +21,7 @@ class DefaultFooter extends Component {
               {this.props.appData &&
                 this.props.appData.socialLinks &&
                 this.props.appData.socialLinks.map((link, index) => (
-                  <li>
+                  <li key={index}>
                     <a href={link.url} title={link.title}>
                       <i className={link.icon}></i>
                     </a>

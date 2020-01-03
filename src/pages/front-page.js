@@ -5,6 +5,7 @@ const renderTextHTML = content => {
   return <div dangerouslySetInnerHTML={{ __html: content }}></div>;
 };
 const FrontPage = props => {
+  // eslint-disable-next-line
   const [frontPageContent, setFrontPageContent] = useState(props.appData);
   return (
     <React.Fragment>

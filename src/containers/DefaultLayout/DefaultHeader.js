@@ -46,6 +46,7 @@ class DefaultHeader extends Component {
     }
   };
   render() {
+    // eslint-disable-next-line
     const { children, ...attributes } = this.props;
     headerNavigation(this.headerRef);
 
@@ -71,10 +72,7 @@ class DefaultHeader extends Component {
                     ) : null}
                   </div>
                   <NavbarBrand className="logo-desktop">
-                    <img
-                      src="https://via.placeholder.com/150x138.png"
-                      alt="image"
-                    />
+                    <img src="https://via.placeholder.com/150x138.png" alt="" />
                   </NavbarBrand>
 
                   <div className="navbar-right">
@@ -92,10 +90,7 @@ class DefaultHeader extends Component {
                   </div>
                 </div>
                 <NavbarBrand className="logo-mobile">
-                  <img
-                    src="https://via.placeholder.com/150x138.png"
-                    alt="image"
-                  />
+                  <img src="https://via.placeholder.com/150x138.png" alt="" />
                 </NavbarBrand>
                 <button
                   className="navbar-toggler"
