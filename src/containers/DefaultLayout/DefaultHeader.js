@@ -11,7 +11,6 @@ const defaultProps = {};
 const headerNavigation = theRef => {
   let theBody = document.getElementsByTagName("body")[0];
 
-  console.log("theRef", theRef.current);
   window.addEventListener("scroll", function() {
     let offsetTop = window.pageYOffset;
     if (offsetTop > 100) {
@@ -33,10 +32,8 @@ class DefaultHeader extends Component {
     this.toggleNavigation = this.toggleNavigation.bind(this);
   }
   toggleNavigation = evt => {
-    console.log(evt);
     let theButton = evt.currentTarget,
       theCollapser = theButton.nextSibling;
-    console.log(theCollapser);
     if (theCollapser.classList.contains("collapse")) {
       theCollapser.classList.add("collapsing");
       theCollapser.classList.remove("collapse");

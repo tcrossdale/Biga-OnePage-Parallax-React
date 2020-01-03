@@ -10,7 +10,6 @@ const defaultProps = {};
 
 class DefaultFooter extends Component {
   render() {
-    // eslint-disable-next-line
     const { children, ...attributes } = this.props;
 
     return (
@@ -18,29 +17,15 @@ class DefaultFooter extends Component {
         <Container>
           <div className="social-links">
             <ul>
-              <li>
-                <a href="mailto:bargiovy@gmail.com">
-                  <i className="fa fa-envelope"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/biganyc/" target="_blank">
-                  <i className="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/biganyc/" target="_blank">
-                  <i className="fa fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.yelp.com/biz/biga-pizza-italiana-contemporanea-new-york-2"
-                  target="_blank"
-                >
-                  <i className="fa fa-yelp"></i>
-                </a>
-              </li>
+              {this.props.appData &&
+                this.props.appData.socialLinks &&
+                this.props.appData.socialLinks.map((link, index) => (
+                  <li>
+                    <a href={link.url} title={link.title}>
+                      <i className={link.icon}></i>
+                    </a>
+                  </li>
+                ))}
             </ul>
           </div>
         </Container>
