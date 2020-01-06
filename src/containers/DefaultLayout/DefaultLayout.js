@@ -2,7 +2,7 @@ import React, { Component, Suspense } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import DefaultFooter from "./DefaultFooter";
 import DefaultHeader from "./DefaultHeader";
-import routes from "../../_routes";
+import appRoutes from "../../_routes";
 
 class DefaultLayout extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class DefaultLayout extends Component {
         <DefaultHeader appData={this.state.appData} />
         <Suspense fallback={this.loading()}>
           <Switch>
-            {routes.map((route, idx) => {
+            {appRoutes.map((route, idx) => {
               return route.component ? (
                 <Route
                   key={idx}
