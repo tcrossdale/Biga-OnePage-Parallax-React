@@ -4,6 +4,8 @@ This theme has been converted to a custom <a href="https://wordpress.org/downloa
 
 It incorporates the latest <a href="https://getbootstrap.com/docs/4.3/getting-started/download/" target="_blank">Bootstrap</a> as the framework to leverage consistency in the different responsive views.
 
+<h4>Theme Details: <a href="http://terrencecrossdale.com/work-sample/biga-nyc/">Portfolio Sample</a> | <a href="http://biganyc.com/">Live Website</a></h4>
+
 ## Get Started
 
 To setup and run project, follow the steps bellow...
